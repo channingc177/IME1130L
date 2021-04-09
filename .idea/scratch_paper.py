@@ -115,31 +115,31 @@
 #
 # main()
 # ----------------------------------------------------------------------
-def isAnagram(s1, s2):
-    l1, l2, harv1, harv2 = list(s1), list(s2), [], []
-    for entry in l1:
-        if entry not in harv1:
-            harv1.append(entry)
-    for entry in l2:
-        if entry not in harv2:
-            harv2.append(entry)
-    harv1.sort()
-    harv2.sort()
-    if harv1 == harv2:
-        return True
-    else:
-        return False
-
-
-def main():
-    boi1, boi2 = input("Enter a string s1: ").strip(), input("Enter a string s2: ").strip()
-    if isAnagram(boi1, boi2):
-        print(f"{boi1} and {boi2} are anagrams")
-    else:
-        print(f"{boi1} and {boi2} are not anagrams")
-
-
-main()
+# def isAnagram(s1, s2):
+#     l1, l2, harv1, harv2 = list(s1), list(s2), [], []
+#     for entry in l1:
+#         if entry not in harv1:
+#             harv1.append(entry)
+#     for entry in l2:
+#         if entry not in harv2:
+#             harv2.append(entry)
+#     harv1.sort()
+#     harv2.sort()
+#     if harv1 == harv2:
+#         return True
+#     else:
+#         return False
+#
+#
+# def main():
+#     boi1, boi2 = input("Enter a string s1: ").strip(), input("Enter a string s2: ").strip()
+#     if isAnagram(boi1, boi2):
+#         print(f"{boi1} and {boi2} are anagrams")
+#     else:
+#         print(f"{boi1} and {boi2} are not anagrams")
+#
+#
+# main()
 
 
 
