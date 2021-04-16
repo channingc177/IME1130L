@@ -116,50 +116,50 @@
 #
 # Main()
 # ----------------------------------------------------------------------
-from math import hypot
-
-class Complex:
-    def __init__(self, in_r, in_c):
-        self.__r, self.__c = in_r, in_c
-
-    def __getitem__(self, ind):
-        return self.__r if ind == 0 else self.__c
-
-    def __add__(self, cx2):
-        return Complex(self.__r + cx2[0], self.__c + cx2[1])
-
-    def __sub__(self, cx2):
-        return Complex(self.__r - cx2[0], self.__c - cx2[1])
-
-    def __mul__(self, cx2):
-        return Complex((self[0] * cx2[0]) - (self[1] * cx2[1]), \
-                       (self[1] * cx2[0]) + (self[0] * cx2[1]))
-
-    def __truediv__(self, cx2):
-        acplusbd = (self[0] * cx2[0]) + (self[1] * cx2[1])
-        cdsquared = (cx2[0] ** 2) + (cx2[1] ** 2)
-        bcminad = (self[1] * cx2[0]) - (self[0] * cx2[1])
-        return Complex(acplusbd / cdsquared, bcminad / cdsquared)
-
-    def __abs__(self):
-        return hypot(self[0], self[1])
-
-    def __str__(self):
-        return f"({self[0]} + {self[1]}i)" if self[1] >= 0 else \
-            f"({self[0]} - {abs(self[1])}i)"
-
-
-def Main():
-    cx1 = Complex(float(input(": ")), float(input(": ")))
-    cx2 = Complex(float(input(": ")), float(input(": ")))
-
-    print(f"{str(cx1)} + {str(cx2)} = {str(cx1 + cx2)}")
-    print(f"{str(cx1)} - {str(cx2)} = {str(cx1 - cx2)}")
-    print(f"{str(cx1)} * {str(cx2)} = {str(Complex((cx1 * cx2)[0], (cx1 * cx2)[1]))}")
-    print(f"{str(cx1)} / {str(cx2)} = {str(Complex((cx1 / cx2)[0], (cx1 / cx2)[1]))}")
-    print(f"|{str(cx1)}| = {str(round(abs(cx1), 1))}")
-
-Main()
-
+# from math import hypot
+#
+# class Complex:
+#     def __init__(self, in_r, in_c):
+#         self.__r, self.__c = in_r, in_c
+#
+#     def __getitem__(self, ind):
+#         return self.__r if ind == 0 else self.__c
+#
+#     def __add__(self, cx2):
+#         return Complex(self.__r + cx2[0], self.__c + cx2[1])
+#
+#     def __sub__(self, cx2):
+#         return Complex(self.__r - cx2[0], self.__c - cx2[1])
+#
+#     def __mul__(self, cx2):
+#         return Complex((self[0] * cx2[0]) - (self[1] * cx2[1]), \
+#                        (self[1] * cx2[0]) + (self[0] * cx2[1]))
+#
+#     def __truediv__(self, cx2):
+#         acplusbd = (self[0] * cx2[0]) + (self[1] * cx2[1])
+#         cdsquared = (cx2[0] ** 2) + (cx2[1] ** 2)
+#         bcminad = (self[1] * cx2[0]) - (self[0] * cx2[1])
+#         return Complex(acplusbd / cdsquared, bcminad / cdsquared)
+#
+#     def __abs__(self):
+#         return hypot(self[0], self[1])
+#
+#     def __str__(self):
+#         return f"({self[0]} + {self[1]}i)" if self[1] >= 0 else \
+#             f"({self[0]} - {abs(self[1])}i)"
+#
+#
+# def Main():
+#     cx1 = Complex(float(input(": ")), float(input(": ")))
+#     cx2 = Complex(float(input(": ")), float(input(": ")))
+#
+#     print(f"{str(cx1)} + {str(cx2)} = {str(cx1 + cx2)}")
+#     print(f"{str(cx1)} - {str(cx2)} = {str(cx1 - cx2)}")
+#     print(f"{str(cx1)} * {str(cx2)} = {str(Complex((cx1 * cx2)[0], (cx1 * cx2)[1]))}")
+#     print(f"{str(cx1)} / {str(cx2)} = {str(Complex((cx1 / cx2)[0], (cx1 / cx2)[1]))}")
+#     print(f"|{str(cx1)}| = {str(round(abs(cx1), 1))}")
+#
+# Main()
+# ----------------------------------------------------------------------
 
 
