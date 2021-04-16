@@ -85,3 +85,37 @@
 #
 # Real()
 # ----------------------------------------------------------------------
+# from math import hypot
+# class Point():
+#     def __init__(self, in_x = 0, in_y = 0):
+#         self.__x, self.__y = in_x, in_y
+#         self.__data = [self.__x, self.__y]
+#
+#     def get_var(self, var_ind):
+#         return self.__data[var_ind]
+#
+#     def distance(self, p2):
+#         return hypot(p2.get_var(0) - self.__x, p2.get_var(1) - self.__y)
+#
+#     def is_near(self, p2):
+#         return True if self.distance(p2) < 5 else False
+#
+#     def __str__(self):
+#         return f"({self.__x}, {self.__y})"
+#
+# def Main():
+#     p1 = Point(float(input(": ")), float(input(": ")))
+#     p2 = Point(float(input(": ")), float(input(": ")))
+#
+#     print(str(round(p1.distance(p2), 2)))
+#     if p1.is_near(p2):
+#         print("The two points are near to other")
+#     else:
+#         print("The two points are not near to other")
+#
+#
+# Main()
+# ----------------------------------------------------------------------
+
+
+
