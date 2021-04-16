@@ -161,5 +161,21 @@
 #
 # Main()
 # ----------------------------------------------------------------------
+# def split(s, delimeters):
+#     harv = []
+#     temp = ""
+#     for char in s:
+#         if char not in delimeters and char != " ":
+#             temp += char
+#         elif char in delimeters and temp != "":
+#             harv.append(temp)
+#             temp = ""
+#     if temp != "":
+#         harv.append(temp)
+#     for entry in harv:
+#         print(str(entry), end=" ")
+#
+#
+# split(input("Enter a string: "), input("Enter delimeters: "))
 
 
